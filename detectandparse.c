@@ -57,16 +57,6 @@ struct indices lookupcompID(int targetVal){
     return indi;  
 }
 
-unsigned int convertToInt(int* arr, int low, int high)
-{
-    unsigned f = 0, i;
-    for (i = high; i >= low; i--) {
-        f = f + arr[i] * pow(2, high - i);
-    }
-    printf("float %u\n", f);
-    return f;
-}
-
 int detectPacket(const uint32_t* data) {
     uint32_t* header = (uint32_t*)data;
     return *header == MAGIC_HEADER;
