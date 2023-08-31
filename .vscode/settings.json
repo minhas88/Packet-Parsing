@@ -1,0 +1,17 @@
+{
+    "cSpell.words": [
+        "AOCS",
+        "chcksm",
+        "indi",
+        "lookupcomp"
+    ],
+    "files.associations": {
+        "ratio": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
+    }
+}
