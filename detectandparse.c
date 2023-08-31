@@ -58,8 +58,7 @@ struct indices lookupcompID(int targetVal){
 }
 
 int detectPacket(const uint32_t* data) {
-    uint32_t* header = (uint32_t*)data;
-    return *header == MAGIC_HEADER;
+    return data[0] == MAGIC_HEADER;
 }
 
 int calCheckSum(const uint32_t *data, const size_t *size){
